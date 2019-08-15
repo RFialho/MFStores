@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -301,6 +302,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,6 +318,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MFStores.Core\MFStores.Core.csproj">
+      <Project>{dcaaedd6-5a14-4568-82ad-30818cbd76ec}</Project>
+      <Name>MFStores.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MFStores.DataAccess.InMemory\MFStores.DataAccess.InMemory.csproj">
+      <Project>{72134b0d-0ff5-4b66-b473-379a564aa7b7}</Project>
+      <Name>MFStores.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MFStores.DataAccess.SQL\MFStores.DataAccess.SQL.csproj">
+      <Project>{775a3c24-cb5c-4f2e-8b58-40d3a8502779}</Project>
+      <Name>MFStores.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MFStores.Services\MFStores.Services.csproj">
+      <Project>{6f3b0f92-a503-43f2-bb1b-21630daa4c20}</Project>
+      <Name>MFStores.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
